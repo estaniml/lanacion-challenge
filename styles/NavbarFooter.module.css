@@ -1,0 +1,326 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    transition: top .6s;
+    width: 100%;
+    padding: 0 40px;
+    background-color: white;
+    z-index: 10;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    transition-timing-function: ease-in;
+    transition: 0.4s;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.navbar div svg {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.6s ease-in-out all;
+}
+
+.navbar div input {
+    padding: 10px 10px;
+    font-size: 12px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: 0.2s ease-in all;
+}
+
+.navbar div input:focus {
+    width: 300px;
+}
+
+.menuBtn{
+    min-width: 70px;
+    text-align: left;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.title {
+    font-family: sans;
+    font-size: 40px;
+    margin: 0;
+    line-height: normal;
+    color: #066c9b;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: #3286AC;
+}
+
+.navbar aside {
+    display: flex;
+    gap: 1rem; 
+}
+
+.suscribeBtn, .loginBtn {
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.suscribeBtn {
+    background-color: #ffff24;
+}
+
+.loginBtn {
+    background-color: #fff;
+    color: #0074c4;
+    border: 1px solid #0074c4;
+}
+
+.loginBtn:hover {
+    background-color: #0074c4;
+    color: #fff;
+}
+
+.searchBtn{
+    padding: 10px 14px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #0074c4;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #0074c4;
+    color: #fff;
+    transition: 0.2s ease-out all;
+}
+
+.searchBtn:hover{
+    background-color: #3286AC;
+}
+
+@media (max-width: 1024px){
+    .navbar div {
+        display: none;
+    }
+    .navbar aside button:nth-child(1){
+        border: none;
+        background-color: white;
+        color: #0074c4;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 0;
+    }
+    .navbar aside button:nth-child(2){
+        display: none;
+    }
+    .navbar h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar aside button:nth-child(2){
+        display: none;
+    }
+}
+
+/* TAB BAR*/
+.tabBar{
+    display: none;
+
+}
+
+@media (max-width: 1024px) {
+    .tabBar{
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        height: 60px;
+        width: 100%;
+        z-index: 20;
+        background-color: white;
+    }
+
+    .tabBar a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.2 ease-out all;
+        font-size: 12px;
+    }
+
+    .tabBar a:hover{
+        color: #066c9b;
+    }
+
+    .tabBar a svg {
+        font-size: 24px !important;
+    }
+}
+
+
+/* FOOTER */
+.footer {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerFirstRow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footerFirstRow ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.footerFirstRow ul a{
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.2 ease-in-out all;
+}
+
+.footerFirstRow ul a:hover{
+    opacity: 0.6;
+}
+
+.apps {
+    display: flex;
+    gap: 3rem;
+}
+
+.appStore {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    max-height: 50px;
+    transition: 0.2s ease-in-out all;
+}
+
+.appStore:hover {
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+.appStore span {
+    font-size: 1.2rem;
+}
+
+.appStore p {
+    margin: 0;
+    font-size: 8px;
+}
+
+.appStore p strong {
+    font-size: 12px;
+}
+
+.linksList{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linksList ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.linksList a {
+    color: #0074c4;
+    cursor: pointer;
+}
+
+.linksList  a:hover{
+    opacity: 0.8;
+}
+
+.linksList p {
+    margin: 0;
+}
+
+.linksList div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLastRow{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(90, 90, 90);
+}
+
+.footerLastRow p {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 1024px){
+    .footerFirstRow{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 10px;
+        border: none;
+    }
+    .footerFirstRow .title{
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+    }
+    .footerFirstRow ul{
+        order:2;
+        margin-top: 10px;
+    }
+    .footerFirstRow div{
+        order:3
+    }
+
+    .linksList{
+        display: none;
+    }
+
+    .footerLastRow{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerLastRow p:nth-child(1){
+        order: 2;
+    }
+}
+
