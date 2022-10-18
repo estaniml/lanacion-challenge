@@ -54,7 +54,7 @@ const Home: NextPage<Props> = ({articles, tags}) => {
     <>
       <header className={styles.headerAds}>
         <p>Este es un clon para un challenge de LA NACION. No es la página web original!</p>
-        <a href='https://github.com/estaniml/lanacion-challenge'>Repositorio del Challenge</a>
+        <a href='https://github.com/estaniml/lanacion-challenge' target='_blank' rel="noreferrer">Repositorio del Challenge</a>
       </header>
 
       <div className={styles.mobileAds}></div>
