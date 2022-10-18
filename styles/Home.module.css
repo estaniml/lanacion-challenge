@@ -211,9 +211,9 @@
     width: 70%;
     position: absolute;
     text-align: center;
-    z-index: 30;
+    z-index: 2;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 400;
   }
   .mobileAds{
     margin: 0px 0 40px 0;
